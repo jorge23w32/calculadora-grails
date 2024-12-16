@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "DM Sans", monospace;
+    width: 100vw;
+    background-color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    gap: 3.125rem  /* 50/16 */;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    color: #222831;
+    font-size: 3.75rem  /* 60/16 */;
+    cursor: pointer;
+    margin-top: 0.625rem  /* 10/16 */;
+    text-align: center;
+}
+h1:hover{
+    text-shadow: 0 0 1.1875rem  /* 19/16 */ rgba(0,173,181,1);
+}
+
+.forms,.operacion-service{
+    display: flex;
+    justify-content: center;
+    gap: 1.5625rem  /* 25/16 */;
+    padding-inline: 3.125rem  /* 50/16 */;
+    max-width: calc(100% - 6.25rem  /* 100/16 */);
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+}
+.operacion{
+    flex: 1 1 100%;
+    max-width: 25rem  /* 400/16 */;
+    width: 100%;
+    height: 25rem  /* 400/16 */;
+    border-radius: 3.125rem  /* 50/16 */;
+    border: 2px solid #00ADB5FF;
+    display: flex;
+    flex-direction: column;
+    padding: 0.9375rem  /* 15/16 */;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+
+}
+.operacion:hover, .operacion-service:hover{
+    box-shadow: 0 0 20px 0 rgba(0,173,181,1);
+    -webkit-box-shadow: 0 0 1.25rem  /* 20/16 */ 0 rgba(0,173,181,1);
+    -moz-box-shadow: 0 0 1.25rem  /* 20/16 */ 0 rgba(0,173,181,1);
+}
+.inputs{
+    display: flex;
+    gap: 0.625rem  /* 10/16 */;
+    width: calc(100% - 1.875rem  /* 30/16 */);
+    justify-content: space-between;
+}
+
+.numero{
+    color: #393E46;
+    max-width: calc(100% - 50% - 1.25rem  /* 20/16 */);
+    width: 100%;
+    height: 2.5rem  /* 40/16 */;
+    background-color: transparent;
+    border: none;
+    font-size: 0.9375rem  /* 15/16 */;
+}
+.button{
+    background-color: #00ADB5FF;
+    max-width: calc(100% - 30% - 1.25rem  /* 20/16 */);
+    width: 100%;
+    text-align: center;
+    max-height: 3.125rem  /* 50/16 */;
+    height: 100%;
+    font-size: 1.125rem  /* 18/16 */;
+    font-weight: bold;
+    border-radius: 100vw;
+    border:2px solid rgba(57,62,70,.5);
+    color: #EEEEEE;
+}
+.button:hover, .button-service:hover{
+    box-shadow: 0 0 20px 0 rgba(57,62,70,1);
+    -webkit-box-shadow: 0 0 1.25rem  /* 20/16 */ 0 rgba(57,62,70,1);
+    -moz-box-shadow: 0 0 1.25rem  /* 20/16 */ 0 rgba(57,62,70,1);
+}
+
+.operacion-service{
+    padding-inline: 0;
+    padding: 0.9375rem  /* 15/16 */;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    max-width: 87.5rem  /* 1400/16 */;
+    align-items: center;
+    margin-bottom: 6.25rem  /* 100/16 */;
+    gap: 3.125rem  /* 50/16 */;
+    border-radius: 3.125rem  /* 50/16 */;
+    border: 2px solid #00ADB5FF;
+}
+.inputs-service{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 3.125rem  /* 50/16 */;
+    flex-wrap: wrap;
+    padding-inline: 6.25rem  /* 100/16 */;
+
+    /*padding-inline: 3.125rem  !* 50/16 *!;*/
+}
+.numbers{
+    align-self: center;
+    flex: 1 ;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3125rem  /* 5/16 */;
+    max-width: calc(100% - 50%   /* 100/16 */);
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    padding-block: 0.3125rem  /* 5/16 */;
+}
+.etq{
+    color: #222831FF;
+    font-size: 1.125rem  /* 18/16 */;
+    font-weight: bold;
+    max-width: calc(100% - 50%);
+    width: 100%;
+    min-width: 7.8125rem  /* 125/16 */;
+    text-align: center;
+    align-self: center;
+
+}
+.number-service{
+    background-color: transparent;
+    font-size: 1rem  /* 16/16 */;
+    border:none;
+    max-width: calc(100% - 50%) /* 200/16 */;
+    width: 100%;
+    min-width: 12.5rem  /* 200/16 */;
+    height: 3.125rem  /* 50/16 */;
+    align-self: center;
+}
+.buttons{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6.25rem  /* 100/16 */;
+    justify-content: space-around;
+    /*padding-inline: 15%;*/
+}
+.button-service{
+    max-width: 12.5rem  /* 200/16 */;
+    width: 100%;
+    height: 6.25rem  /* 100/16 */;
+    border: 0.125rem  /* 2/16 */ solid rgba(57,62,70,.5);
+    background-color: #00ADB5FF;
+    border-radius: 25px;
+    font-size: 1.125rem  /* 18/16 */;
+    font-weight: bold;
+    color: #EEEEEE;
+}
+
+
